@@ -7,9 +7,12 @@ import os
 import time
 
 
-# data directory
-data_dir = Path().cwd()
+# root directory
+root_dir = Path().cwd()
 
+# data directory
+data_dir = root_dir / "my_robot_dataset"
+print(data_dir)
 
 # ----------- CONFIGURATION -------------
 FS = 16000          # Sample rate
