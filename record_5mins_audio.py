@@ -38,6 +38,14 @@ def record_sample (label):
 
     # Start Recording using Sounddevice
     recording = sd.rec(int(FS * SESSION_DURATION), samplerate= FS, dtype='int16', channels=CHANNELS)
+
+    # Simple progress bar so you don't get bored or stop early
+    for second in range(SESSION_DURATION):
+        time.sleep(1)
+        if second % 10 == 0: # Print every 10 seconds
+            print(f"Time elapsed: {second}s / {SESSION_DURATION}s")
+
+            
     sd.wait()
     print("Done....")
 
@@ -58,7 +66,7 @@ if __name__ == "__main__":
     try:
         while True:
             record_sample(current_label)
-            cont = input("\nPress Enter to record another, or 'new' to enter a new label, or 'exit' to exit the program").strip().lower()
+            cont = input("\nPress Enter to record another, or 'new' to enter a new label, or 'exit' to exit the program: ").strip().lower()
 
             if cont == 'exit':
                 break
