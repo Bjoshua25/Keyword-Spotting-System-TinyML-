@@ -53,7 +53,6 @@ def record_sample (label):
     filename = f"{label}_{int(time.time() * 1000)}.wav"
     filepath = label_dir / filename
 
-
     # write the recorded array into the file
     write(filepath, FS, recording)
     print(f"Saved to: {filepath}") 
