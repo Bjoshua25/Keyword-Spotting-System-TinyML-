@@ -29,7 +29,7 @@
 
 // ==================== CONFIGURATION ====================
 // WiFi Credentials
-const char* WIFI_SSID     = "Godwin";
+const char* WIFI_SSID     = "GodWin";
 const char* WIFI_PASSWORD = "iiiiiiii";
 
 // Wit.ai Token (get from https://wit.ai -> Your App -> Settings)
