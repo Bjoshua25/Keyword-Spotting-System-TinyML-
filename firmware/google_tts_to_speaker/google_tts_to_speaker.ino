@@ -1,4 +1,4 @@
-#include "Arduino.h"
+ #include "Arduino.h"
 #include "WiFi.h"
 #include "Audio.h"
 
@@ -26,7 +26,7 @@ void setup() {
     audio.setPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
 
     // SOUND IMPROVEMENT 2: Lower volume to 18 to avoid digital clipping
-    audio.setVolume(17); 
+    audio.setVolume(18); 
 
     // SOUND IMPROVEMENT 3: DSP Equalizer - Boost mids, cut sharp highs
     audio.setTone(0, 4, -6); 
