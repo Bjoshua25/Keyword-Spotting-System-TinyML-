@@ -2,7 +2,7 @@
 #include "WiFi.h"
 #include "Audio.h"
 
-const char* WIFI_SSID     = "Godwin";
+const char* WIFI_SSID     = "GodWin";
 const char* WIFI_PASSWORD = "iiiiiiii";
 
 #define I2S_BCLK 26
@@ -26,7 +26,7 @@ void setup() {
     audio.setPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
 
     // SOUND IMPROVEMENT 2: Lower volume to 18 to avoid digital clipping
-    audio.setVolume(18); 
+    audio.setVolume(21); 
 
     // SOUND IMPROVEMENT 3: DSP Equalizer - Boost mids, cut sharp highs
     audio.setTone(0, 4, -6); 

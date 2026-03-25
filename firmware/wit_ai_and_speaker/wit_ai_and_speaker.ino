@@ -124,7 +124,7 @@ void setup() {
         
         // ==================== VOLUME/GAIN ====================
         // Gain: 0.0 to 1.0 (0.0 = mute, 1.0 = max volume)
-        tts.setGain(0.5);
+        tts.setGain(0.9);
         
         // ==================== SOUND EFFECTS (Optional) ====================
         // SFX Character - Transforms the voice:

@@ -20,11 +20,11 @@ void setup() {
     WiFi.begin(ssid, password);
     while (WiFi.status() != WL_CONNECTED) delay(500);
     
-    out = new AudioOutputI2S();
+    out = new ASudioOutputI2S();
     out->SetPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
     sam = new ESP8266SAM();
-    sam->SetPitch(20);
-    sam->SetSpeed(90);
+    sam->SetPitch(90);
+    sam->SetSpeed(100);
     Serial.println("✓ Text-to-Entity Ready. Type your question...");
 }
 
