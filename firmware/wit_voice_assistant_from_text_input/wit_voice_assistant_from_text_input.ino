@@ -20,7 +20,7 @@ void setup() {
     WiFi.begin(ssid, password);
     while (WiFi.status() != WL_CONNECTED) delay(500);
     
-    out = new ASudioOutputI2S();
+    out = new AudioOutputI2S();
     out->SetPinout(I2S_BCLK, I2S_LRC, I2S_DOUT);
     sam = new ESP8266SAM();
     sam->SetPitch(90);

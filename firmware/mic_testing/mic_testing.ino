@@ -1,7 +1,7 @@
 #include <driver/i2s.h>
 
 // I2S Configuration
-#define I2S_WS 15
+#define I2S_WS 33
 #define I2S_SD 32
 #define I2S_SCK 14
 #define I2S_PORT I2S_NUM_0
